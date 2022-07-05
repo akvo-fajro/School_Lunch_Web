@@ -33,6 +33,7 @@ sudo usermod -aG docker $USER
 # install nginx
 sudo apt install nginx -y
 ```
+> need to logout and login again to setup the user group `docker`
 
 ## setup django , mysql and uwsgi
 ```bash
