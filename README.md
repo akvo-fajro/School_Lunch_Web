@@ -72,7 +72,7 @@ server {
     }
 }
 ```
-`$ ln -s /etc/nginx/sites-available/deploy-at-root-proxy-pass.conf /etc/nginx/sites-enabled/`  
+`$ sudo ln -s /etc/nginx/sites-available/deploy-at-root-proxy-pass.conf /etc/nginx/sites-enabled/`  
 `$ sudo rm /etc/nginx/sites-enabled/default`  
 > try `nginx -t` to check if everything is right
 `$ sudo systemctl restart nginx`  
