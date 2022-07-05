@@ -35,11 +35,11 @@ cat ./data/foods_and_orders/forms.py > ./site/schoollunchweb/foods_and_orders/fo
 cat ./data/foods_and_orders/models.py > ./site/schoollunchweb/foods_and_orders/models.py
 cat ./data/foods_and_orders/urls.py > ./site/schoollunchweb/foods_and_orders/urls.py
 cat ./data/foods_and_orders/views.py > ./site/schoollunchweb/foods_and_orders/views.py
-mv ./data/foods_and_orders/admin_pages > ./site/schoollunchweb/foods_and_orders
-mv ./data/foods_and_orders/food_pages > ./site/schoollunchweb/foods_and_orders
-mv ./data/foods_and_orders/manager_pages > ./site/schoollunchweb/foods_and_orders
-mv ./data/foods_and_orders/order_pages > ./site/schoollunchweb/foods_and_orders
-mv ./data/foods_and_orders/state_pages > ./site/schoollunchweb/foods_and_orders
+mv ./data/foods_and_orders/admin_pages ./site/schoollunchweb/foods_and_orders
+mv ./data/foods_and_orders/food_pages ./site/schoollunchweb/foods_and_orders
+mv ./data/foods_and_orders/manager_pages ./site/schoollunchweb/foods_and_orders
+mv ./data/foods_and_orders/order_pages ./site/schoollunchweb/foods_and_orders
+mv ./data/foods_and_orders/state_pages ./site/schoollunchweb/foods_and_orders
 cat ./data/accounts_pages/admin.py > ./site/schoollunchweb/accounts_pages/admin.py
 cat ./data/accounts_pages/forms.py > ./site/schoollunchweb/accounts_pages/forms.py
 cat ./data/accounts_pages/models.py > ./site/schoollunchweb/accounts_pages/models.py
