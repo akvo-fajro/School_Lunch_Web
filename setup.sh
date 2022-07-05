@@ -51,7 +51,9 @@ cat ./data/other/extent_bashrc >> ~/.bashrc
 source ~/.bashrc
 rm ./data/other/extent_bashrc
 mv ./data/other/* ./site
-cd ./site
+cd ./site/schoollunchweb
+python3 manage.py collectstatic
+cd ../
 
 # start the mysql in docker
 # work dir : ./site
