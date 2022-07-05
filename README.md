@@ -81,3 +81,9 @@ server {
 
 `$ sudo systemctl restart nginx`  
 
+## get a domain name
+[freenom website](https://www.freenom.com/en/index.html?lang=en)  
+
+
+## get a ssl cert
+[cerboot reference](https://certbot.eff.org/instructions?ws=nginx&os=ubuntufocal)  
