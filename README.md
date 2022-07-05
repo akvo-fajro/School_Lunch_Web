@@ -40,8 +40,10 @@ sudo apt install nginx -y
 git clone https://github.com/akvo-fajro/School_Lunch_Web.git
 mv School_Lunch_Web site
 cd site
-chmod u+x setup.sh
-./setup.sh
+chmod u+x setup1.sh setup2.sh
+./setup1.sh
+source ~/.bashrc
+./setup2.sh
 ```
 
 ## setup nginx
