@@ -33,3 +33,12 @@ sudo usermod -aG docker $USER
 # install nginx
 sudo apt install nginx -y
 ```
+
+## setup
+```bash
+git clone https://github.com/akvo-fajro/School_Lunch_Web.git
+mv School_Lunch_Web site
+cd site
+chmod u+x setup.sh
+./setup.sh
+```
