@@ -24,3 +24,5 @@ cd schoollunchweb
 uwsgi -d --ini uwsgi.ini
 cd ..
 python3 timejob.py &
+cd ..
+sudo rm -r ./data
