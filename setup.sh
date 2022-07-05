@@ -48,6 +48,7 @@ cat ./data/accounts_pages/views.py > ./site/schoollunchweb/accounts_pages/views.
 mv ./data/accounts_pages/users_pages ./site/schoollunchweb/accounts_pages
 mv ./data/uwsgi.ini ./site/schoollunchweb
 cat ./data/other/extent_bashrc >> ~/.bashrc
+sleep 5
 source ~/.bashrc
 rm ./data/other/extent_bashrc
 mv ./data/other/* ./site
