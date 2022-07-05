@@ -25,4 +25,10 @@ uwsgi -d --ini uwsgi.ini
 cd ..
 python3 timejob.py &
 cd ..
+
+# remove the non-using data and print the static path
+# work dir : ./
 sudo rm -r ./data
+echo "*********************************"
+echo "the /static/ path is : "`pwd`"/site/schoollunchweb/static/"
+echo "*********************************"
