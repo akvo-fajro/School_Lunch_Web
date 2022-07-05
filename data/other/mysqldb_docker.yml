@@ -1,0 +1,21 @@
+# mysqldb docker for schoollunchweb
+# arthor : curious
+
+version: '3'
+
+services:
+  mysqldb:
+    image: mysql
+    ports:
+      - 8080:3306
+    environment:
+      MYSQL_ROOT_PASSWORD: {your_mysql_root_passwd}
+      MYSQL_DATABASE: {your_database_name}
+      MYSQL_USER: {your_database_user}
+      MYSQL_PASSWORD: {your_database_password}
+    volumes:
+      - mysql_data:/var/lib/mysql # this is the place to store mysql's data
+
+volumes:
+  mysql_data:
+    driver: local

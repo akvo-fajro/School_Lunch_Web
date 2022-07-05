@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+
+{% block  content_active_menu %}active{% endblock %}
+
+{% block content %}
+<h2 class="go_center">今日菜單</h2>
+<hr>
+<br>
+<style>
+  .table {
+    padding: 20px;
+  }
+</style>
+<div class='table'>
+  <table class="table table-hover table-bordered">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">餐點</th>
+        <th scope="col">價錢</th>
+        <th scope="col">熱門程度</th>
+        <th scope="col">點餐</th>
+        <th scope="col">編輯</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for food in food_list %}
+      <tr>
+        <th scope="row">{{ food.food_id }}</th>
+        <td>{{ food.name }}</td>
+        <td>{{ food.price }}</td>
+        <td>{{ food.popular }}</td>
+        {% if can_order %}
+        <td><a href="/food/order/{{ food.food_id }}"><button class="btn btn-outline-dark" type="submit">點餐</button></a></td>
+        {% else %}
+        <td><button class="btn btn-outline-dark" type="submit" disabled>點餐</button></td>
+        {% endif %}
+        <td><a href="/food/change/{{ food.food_id }}"><button class="btn btn-outline-dark" type="submit">更改</button></a></td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</div>
+<div class="go_center"><a href="/food/create"><button class="btn btn-outline-dark" type="submit">新增餐點</button></a></div>
+{% endblock %}

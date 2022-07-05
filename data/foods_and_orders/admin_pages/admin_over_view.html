@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block  content_active_admin %}active{% endblock %}
+
+{% block content %}
+<h2 class="go_center">Admin Page</h2>
+<hr>
+<br>
+
+<div class="go_center"><a href="/food/admin/clear_manager"><button class="btn btn-outline-dark" type="submit">clear manager</button></a></div>
+<br>
+<div class="go_center"><a href="/food/admin/refresh_menu"><button class="btn btn-outline-dark" type="submit">refresh menu</button></a></div>
+<br>
+<div class="go_center"><a href="/food/admin/clear_money"><button class="btn btn-outline-dark" type="submit">clear money</button></a></div>
+<br>
+<div class="go_center"><a href="/food/admin/order_error"><button class="btn btn-outline-dark" type="submit">order error</button></a></div>
+
+{% endblock %}

@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block  content_active_cart %}active{% endblock %}
+
+{% block content %}
+<h2 class="go_center">繳錢</h2>
+<hr>
+<br>
+<form action="" method="POST" class="go_center"> {% csrf_token %}
+  <h5>座號:{{ user.useradditionalinformation.sit_number }}</h5>
+  <h5>姓名:{{ user.username}}</h5>
+  <h5>要繳的錢:{{ user.useradditionalinformation.money_to_pay }}</h5>
+  {{ form.as_p }}
+
+    <input type="submit" value="繳交">
+</form>
+<br>
+
+<div class="go_center"><a href="/food/cart"><button class="btn btn-outline-dark" type="submit">回到購物車</button></a></div>
+{% endblock %}

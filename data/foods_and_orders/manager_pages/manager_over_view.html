@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block  content_active_manager %}active{% endblock %}
+
+{% block content %}
+<h2 class="go_center">負責人主頁</h2>
+<hr>
+<br>
+
+<div class="go_center"><a href="/food/manager/start_order"><button class="btn btn-outline-dark" type="submit">開始點餐</button></a></div>
+<br>
+<div class="go_center"><a href="/food/manager/stop_order"><button class="btn btn-outline-dark" type="submit">停止點餐</button></a></div>
+<br>
+{% endblock %}

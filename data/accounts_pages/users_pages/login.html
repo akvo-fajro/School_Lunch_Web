@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block content_active_accounts %}active{% endblock %}
+
+{% block content %}
+<h2 class="go_center">登入</h2>
+<hr>
+<br>
+{% if request.user.is_authenticated %}
+<h3 class="go_center">你已經登入囉 {{ request.user }} 😝😝😝</h3>
+{% else %}
+<form action="" method="POST" class="go_center"> {% csrf_token %}
+    {% if error %}
+    <p>登入失敗</p>
+    {% endif %}
+    {{ form.as_p }}
+
+    <input type="submit" value="login">
+</form>
+<br>
+
+<p class="go_center">忘記密碼？請跟我講(要不要先試一下預設密碼🤔)</p>
+{% endif %}
+{% endblock %}
