@@ -87,3 +87,16 @@ server {
 
 ## get a ssl cert
 [cerboot reference](https://certbot.eff.org/instructions?ws=nginx&os=ubuntufocal)  
+
+## other
+### start the mysql
+`$ docker-compose -f mysqldb_docker.yml up -d`  
+
+### stop the mysql
+`$ docker-compose -f mysqldb_docker.yml down`  
+
+### start the web (not initialize)
+`$ uwsgi -d --ini uwsgi.ini`  
+
+### shutdown the web
+`$ uwsgi --stop /tmp/schoollunchewb-master.pid`  
